@@ -16,66 +16,79 @@
 <body>
     <!-- <div id="containerForm">
         <div id="formulario">
+
+            <div>
+                <label for="">Alta de Vehículo</label>
+            </div>
+
             <div id="divClose" class="containerBtnClose">
-                <input type="button" value="X " id="btnClose">
+                <input type="button" value="X" id="btnClose">
             </div>
 
             <div id=rowFromForm rowId=0>
             </div>
 
             <div>
-                <label for="fname" class="label">Nombre</label>
+                <label for="txtId" class="label">Id: </label>
             </div>
 
             <div>
-                <input type="text" id="fname" class="sinError" placeholder="Nombre de la materia..">
+                <input type="text" id="txtId" class="sinError">
             </div>
 
             <div>
-                <label for="fcuatrimestre" class="label">Cuatrimestre</label>
+                <label for="txtMarca" class="label">Marca: </label>
             </div>
 
             <div>
-                <select name="cuatrimestre" id="fcuatrimestre">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                  </select>
+                <input type="text" id="txtMarca" class="sinError">
             </div>
 
             <div>
-                <label for="Turno" class="label">Turno</label><br/>
+                <label for="txtModelo" class="label">Modelo: </label>
             </div>
 
             <div>
-                <input type="radio" id="radioMañana" name="Turno" value="Mañana">
-                <label for="radioMañana">Mañana</label><br>
-                <input type="radio" id="radioNoche" name="Turno" value="Noche">
-                <label for="radioNoche">Noche</label><br>
+                <input type="text" id="txtModelo" class="sinError">
             </div>
 
             <div>
-                <label for="lFechaFinal" class="label">Fecha de Final</label>
+                <label for="txtPrecio" class="label">Precio: </label>
             </div>
 
             <div>
-                <input type="date" id="lFechaFinal" class="sinError">
+                <input type="text" id="txtPrecio" class="sinError">
             </div>
 
-            <div id="containerFormBtns">
-                <input type="button" id="btnEliminate" value="Eliminar">
-                <input type="button" id="btnModificar" value="Modificar">
+            <div>
+                <label for="tipo" class="label">Tipo: </label>
+            </div>
+
+            <div>
+                <select name="tipo" id="cmbTipo">
+                    <option value="Auto">Auto</option>
+                    <option value="Camioneta">Camioneta</option>
+                </select>
+            </div>
+
+            <div id="containerFormBtnsCerrar">
+                <input type="button" id="btnCerrar" value="Cerrar">
+                <input type="button" id="btnAgregar" value="Agregar">
             </div>
         </div>
     </div> -->
+
+
+
+
+
     <div id="divAlta" class="containerBtnAlta">
         <input type="button" value="Alta" id="btnAlta">
     </div>
 
     <h2>Filtros</h2>
 
-    <div id="containerFormBtns">
+    <div id="containerFormFiltros">
         <div>
             <label for="filtro" class="label">Filtrar por: </label>
         </div>
