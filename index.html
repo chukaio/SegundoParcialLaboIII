@@ -69,16 +69,48 @@
             </div>
         </div>
     </div> -->
+    <div id="divAlta" class="containerBtnAlta">
+        <input type="button" value="Alta" id="btnAlta">
+    </div>
+
+    <h2>Filtros</h2>
+
+    <div id="containerFormBtns">
+        <div>
+            <label for="filtro" class="label">Filtrar por: </label>
+        </div>
+
+
+        <div>
+            <select name="filtro" id="cmbFiltro">
+                <option value="Auto">Auto</option>
+                <option value="Camioneta">Camioneta</option>
+                <option value="Todos">Todos</option>
+            </select>
+        </div>
+
+
+        <div>
+            <label for="txtPromedio" class="label">Promedio de precio: </label>
+        </div>
+        <div>
+            <input type="text" id="txtPromedio">
+        </div>
+        <div>
+            <input type="button" id="btnPromedio" value="Calcular Promedio">
+        </div>
+    </div>
 
     <div id="divTable">
-        <h2>Lista de Materias</h2>
+        <h2>Lista de Vehiculos</h2>
         <table id="tableMaterias">
             <thead>
                 <tr>
-                    <th>Nombre</th>
-                    <th>Cuatrimestre</th>
-                    <th>Fecha de Final</th>
-                    <th>Turno</th>
+                    <th>Id</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Precio</th>
+                    <th>Accion</th>
                 </tr>
             </thead>
             <tbody id="tblBody">
