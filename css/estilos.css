@@ -85,7 +85,7 @@ body {
 }
 
 input[type=button] {
-    color: white;
+    color: rgb(189, 8, 8);
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -118,14 +118,14 @@ input[type=text] {
     align-items: center;
 }
 
-#btnEliminate {
-    background-color: red;
+#btnAlta {
+    background-color: rgb(0, 162, 255);
     cursor: pointer;
     box-shadow: 10px 10px 5px 0px rgb(194, 192, 192);
 }
 
-#btnEliminate:hover {
-    background-color: rgb(253, 106, 106);
+#btnAlta:hover {
+    background-color: rgb(12, 10, 150);
     color: white;
 }
 
