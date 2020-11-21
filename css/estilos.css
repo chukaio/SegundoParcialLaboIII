@@ -140,6 +140,39 @@ input[type=text] {
     color: white;
 }
 
+#btnPromedio {
+    background-color: rgb(220, 9, 240);
+    cursor: pointer;
+    box-shadow: 10px 10px 5px 0px rgb(194, 192, 192);
+}
+
+#btnPromedio:hover {
+    background-color: rgb(79, 6, 82);
+    color: white;
+}
+
+#btnCerrar {
+    background-color: rgb(241, 9, 9);
+    cursor: pointer;
+    box-shadow: 10px 10px 5px 0px rgb(194, 192, 192);
+}
+
+#btnCerrar:hover {
+    background-color: rgb(63, 5, 5);
+    color: white;
+}
+
+#btnAgregar {
+    background-color: rgb(68, 240, 15);
+    cursor: pointer;
+    box-shadow: 10px 10px 5px 0px rgb(194, 192, 192);
+}
+
+#btnAgregar:hover {
+    background-color: rgb(12, 63, 5);
+    color: white;
+}
+
 
 /* --------------- */
 
