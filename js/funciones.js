@@ -11,13 +11,11 @@ function eraseRow(e) {
     var id = e.target.parentNode.parentNode.firstElementChild.textContent;
     var body = document.getElementById("tblBody");
     var rows = body.rows;
-    //rows[id].remove();
     for (var index = 0; index < rows.length; index++) {
         if (rows[index].firstElementChild.textContent === id) {
             rows[index].remove();
         }
     }
-    //alert("Intentando borrar el id "+id);
 }
 function addVehicle() {
     var tbody = document.getElementById("tblBody");
@@ -46,7 +44,6 @@ function addVehicle() {
     else {
         txtId = document.createTextNode((rows.length + 1).toString());
     }
-    //txtId = document.createTextNode("1");
     txtMarca = document.createTextNode(document.getElementById("txtMarca").value);
     txtModelo = document.createTextNode(document.getElementById("txtModelo").value);
     txtPrecio = document.createTextNode(document.getElementById("txtPrecio").value);
@@ -67,6 +64,14 @@ function addVehicle() {
     tbody.appendChild(tr);
 }
 function calculateAvg() {
+    var body = document.getElementById("tblBody");
+    var rows = body.rows;
+    var sum = 0;
+    var txtPromedio = document.getElementById("txtPromedio");
+    for (var index = 0; index < rows.length; index++) {
+        sum = sum + parseInt(rows[index].firstElementChild.nextSibling.nextSibling.nextSibling.textContent);
+    }
+    txtPromedio.value = (sum / rows.length).toString();
 }
 function filterVehicle() {
 }

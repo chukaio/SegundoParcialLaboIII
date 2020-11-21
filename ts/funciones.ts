@@ -52,7 +52,6 @@ function addVehicle(){
     }else{
         txtId = document.createTextNode((rows.length+1).toString());
     }    
-    //txtId = document.createTextNode("1");
     txtMarca = document.createTextNode((document.getElementById("txtMarca") as HTMLInputElement).value);
     txtModelo = document.createTextNode((document.getElementById("txtModelo") as HTMLInputElement).value);
     txtPrecio = document.createTextNode((document.getElementById("txtPrecio") as HTMLInputElement).value);    
@@ -74,7 +73,15 @@ function addVehicle(){
 }
 
 function calculateAvg(){
-    
+    var body = document.getElementById("tblBody");
+    var rows = (body as HTMLTableElement).rows;
+    var sum = 0;
+    var txtPromedio = document.getElementById("txtPromedio");
+
+    for (let index = 0; index < rows.length; index++) {
+        sum=sum+parseInt(rows[index].firstElementChild.nextSibling.nextSibling.nextSibling.textContent);
+    } 
+    (txtPromedio as HTMLInputElement).value= (sum/rows.length).toString();
 }
 
 function filterVehicle(){
